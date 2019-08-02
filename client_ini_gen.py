@@ -29,4 +29,4 @@ def create_client_ini(index, start_port, end_port):
 		config_file.write("\n")
 
 for i in range(noi):
-	create_client_ini(i, noi * 1000 + 1, noi * 1000 + 1001)
+	create_client_ini(i, i * 1000 + 1, i * 1000 + 1001)
