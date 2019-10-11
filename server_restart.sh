@@ -1,5 +1,4 @@
 killall frps
-python3 server_ini_gen.py
 sudo nohup ./frps -c frps0.ini > frps0.log &
 sudo nohup ./frps -c frps1.ini > frps1.log &
 sudo nohup ./frps -c frps2.ini > frps2.log &

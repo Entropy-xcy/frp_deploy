@@ -1,5 +1,4 @@
 killall frpc
-python3 client_ini_gen.py
 nohup ./frpc -c frpc0.ini > frpc0.log &
 nohup ./frpc -c frpc1.ini > frpc1.log &
 nohup ./frpc -c frpc2.ini > frpc2.log &
