@@ -5,6 +5,7 @@ cp ./frp_0.28.0_linux_amd64/frps ./
 rm -r ./frp_0.28.0_linux_amd64/
 rm frp_0.28.0_linux_amd64.tar.gz
 python3 server_ini_gen.py
+ulimit -n 65535
 sudo nohup ./frps -c frps0.ini > frps0.log &
 sudo nohup ./frps -c frps1.ini > frps1.log &
 sudo nohup ./frps -c frps2.ini > frps2.log &
