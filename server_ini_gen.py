@@ -1,5 +1,5 @@
 # Enter the port range below as a multiple of 1000
-max_port = 30000
+max_port = 10000
 
 # Set the base port for the tcp and kcp protocol
 tcp_base_port = 42760

@@ -19,7 +19,7 @@ for p in add_ports:
     print(p)
 
 # Enter the port range below as a multiple of 1000
-max_port = 30000
+max_port = 10000
 
 # Set the base port for the tcp and kcp protocol
 tcp_base_port = 42760
@@ -41,8 +41,8 @@ def create_client_ini(index, start_port, end_port):
 
     config_file.write("[common]\n")
     config_file.write("server_addr = " + server_addr + "\n")
-    config_file.write("server_port = " + str(kcp_base_port + index) + "\n")
-    config_file.write("protocol = kcp \n")
+    config_file.write("server_port = " + str(tcp_base_port + index) + "\n")
+    config_file.write("protocol = tcp \n")
     config_file.write("\n")
 
     for i in range(start_port, end_port):
